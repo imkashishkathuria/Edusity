@@ -1,3 +1,4 @@
+import About from "./components/About/About"
 import Hero from "./components/Hero/Hero"
 import Navbar from "./components/Navbar/Navbar"
 import Programs from "./components/Programs/Programs"
@@ -10,8 +11,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className="container">
-        <Title subTitle={"OUR PROGRAM"} title={"What We Offer"} />
+        <Title subTitle="OUR PROGRAM" title="What We Offer" />
         <Programs />
+        <About />
+        <Title subTitle="Gallery" title="Campus Photos" />
       </div>
      
     </div>
