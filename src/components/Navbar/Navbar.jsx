@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 const Navbar = () => {
   return (
     <nav className='container'>
-      {/* <img src={logo} alt='' className='logo'/>
+      <img src={logo} alt='' className='logo'/>
       <ul>
         <li>Home</li>
         <li>Program</li>
@@ -12,7 +12,7 @@ const Navbar = () => {
         <li>Campus</li>
         <li>Testimonials</li>
         <li> <button className='btn'>Contact Us</button></li>
-      </ul> */}
+      </ul>
     </nav>
   )
 }
