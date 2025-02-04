@@ -8,9 +8,12 @@ import Programs from "./components/Programs/Programs"
 import Testimonials from "./components/Testimonials/Testimonials"
 import Title from "./components/Title/Title"
 import Footer from "./components/Footer/Footer"
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer"
+import { useState } from "react"
 
 
 const App = () => {
+  const [playState, setPlayState] = useState(false);
   return (
     <div>
       <ToastContainer />
@@ -19,7 +22,7 @@ const App = () => {
       <div className="container">
         <Title subTitle="OUR PROGRAM" title="What We Offer" />
         <Programs />
-        <About />
+        <About setPlayState={setPlayState} />
         <Title subTitle="Gallery" title="Campus Photos" />
         <Campus />
         <Title subTitle="TESTIMONIALS" title="What Student Says" />
@@ -28,7 +31,7 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
-     
+      <VideoPlayer playState={playState} setPlayState={setPlayState} />
     </div>
     
   )
