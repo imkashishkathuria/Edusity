@@ -28,3 +28,47 @@ nav ul li{
     background-color: #212EA0;
     transition: 0.5s;
 }
+
+@media (max-width:1000px) {
+    .logo{
+        width: 140px;
+    }
+
+    nav ul li{
+        margin: 10px 15px;
+    }
+}
+
+@media (max-width:840px) {
+    nav{
+        padding: 15px 0;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #212EA0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+        height: 100vh;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px 30px;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        margin-left: 2px;
+    }
+
+    .hide-mobile-menu{
+        right: -200px;
+    }
+}
